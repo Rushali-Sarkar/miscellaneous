@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "icon" type = "img/png" href = "https://static.thenounproject.com/png/39234-200.png">
+	<link rel = "stylesheet" type = "text/css" href = "form.css">
+	<script src = "form.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Registraion Form</h1>
+		<p> Fill Up The Following Details To Proceed</p>
+		<br>
+		<br>
+		<br>
+	</header>
+	
+	<form onsubmit="return checkForm(this);">
+		<img src = "https://image.flaticon.com/icons/svg/1486/1486433.svg">
+		<br>
+		<br>
+		<br>
+		<p> Name</p> 
+		<div class = "input">
+			<input type = "text" name = "firstname" placeholder = "Enter your name" class = "first">
+		</div>
+		<p> Email</p>
+		<div class = "input"> 	    
+			<input type = "email" name = "email" placeholder = "Enter your email adress" class = "first">
+		</div>
+		<p> Password</p> 
+		<div class = "input">
+			<input type="password" id="password-field" class = "first" placeholder = "password">
+        <i id="pass-status" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+		</div>
+
+		<p> Please choose your gender </p>
+		<div id = "gender-selection">
+			<label class = "container" > Male 
+			<input type = "radio" name = "gender" id = "male" value = "male">
+			<span class = "checkmark">
+			</label>
+  			<label class = "container" > Female 
+  			<input type = "radio" name = "gender" id = "female" value = "female">
+			<span class = "checkmark">
+			</label>
+  			<label class = "container"> Other
+  			<input type = "radio" name = "gender" id = "other" value = "other">
+			<span class = "checkmark">
+			</label>
+			<label class = "container"> Prefer not to mention 
+			<input type = "radio" name = "gender" id = "no mention" value = "no mention">
+			<span class = "checkmark">
+			</label>
+		</div>
+		<br>
+		<p> Birthday</p>
+		<div class = "input">
+			<input type = "date" id = "birthday" name = "birthday">
+		</div>
+		<p> Upload your resume </p>
+		<div class = "input">
+			<input type = "file" id = "myfile" name = "myfile">
+		</div>
+		<p> Choose employement type: </p>
+		<div class  = "select">
+			<select name = "employment" id = "emp">
+				<option value = "select"> Select </option>
+				<option value = "full-time" > Full-Time </option>
+				<option value = "part-time" > Part-Time </option>
+				<option value = "internship"> Internship </option>
+				<option value = "volunteer"> Volunteer </option>
+			</select>
+		</div>
+		<p>I agree to the <a href = "termsandconds.html"> terms and conditions </a>
+		<input type = "checkbox" name = "terms"> 
+		</p>
+		<div class = "input">
+			<input type = "submit" value = "Register" id = "click" >
+		</div>
+	</form>
+</body>

@@ -1,0 +1,216 @@
+body
+{
+	background-image: url("https://images.wallpaperscraft.com/image/leaves_autumn_fallen_120618_3840x2400.jpg");
+	background-position: center;
+	background-repeat: initial;
+	background-size: auto;	
+	backdrop-filter: blur(5px);
+}
+
+form
+{
+	width: 50%;
+	height: 1200px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	position: absolute;
+	transfrom:translate(-50%, -50%);	
+	top: 100%;
+	left: 25%;
+	box-sizing: border-box;
+}
+
+img
+{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+form p
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+form input
+{
+	text-align: center;
+	width:50%;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.first
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+}
+
+.input
+{
+  	padding-left: 32%;
+}
+
+header 
+{
+	padding-top: 10px;
+	text-align:center;
+	color: rgb(255, 255, 255);
+}
+
+header p
+{
+	font-family : monospace;
+	font-size: 150%;
+}
+
+form
+{
+	margin:auto;
+}
+
+#click
+{
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	height: 40px;
+	background: #D2691E;
+	color: #FFFFFF;
+	outline: none;
+}
+
+#gender-selection
+{
+	font-size: 20px;
+}
+
+
+.container 
+{
+  	display: block;
+  	position: relative;
+  	padding-left: 50%;
+  	margin-bottom: 12px;
+  	cursor: pointer;
+  	font-size: 22px;
+  	user-select: none;
+}
+
+
+.container input 
+{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark 
+{
+  	position: absolute;
+  	top: 0;
+  	left: 45%;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #20B2AA;
+	border-radius: 100%;
+}
+
+.container:hover input ~ .checkmark 
+{
+  	background-color: #085e72;
+}
+
+.container input:checked ~ .checkmark 
+{
+  	background: #032b1e;
+}
+
+
+.checkmark:after 
+{
+  	content: "";
+  	position: absolute;
+ 	display: none;
+}
+
+.container input:checked ~ .checkmark:after 
+{
+  	display: block;
+}
+
+.container .checkmark:after 
+{
+  	top: 8px;
+  	left: 8px;
+  	width: 9px;
+  	height: 9px;
+  	background: #FFFFFF;
+	border-radius:100%;
+	
+}
+
+input[type = "date"]
+{
+	text-align: center;
+	color: #000000;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: 	#ADD8E6 ;
+	outline: none;
+	height: 40px;
+	border-radius: 30px 30px 30px 30px ;
+	cursor: pointer;
+}
+
+input[type = "file"]
+{
+	text-align: center;
+	color: #FFFFFF;
+	background: transparent;
+	height: 40px;
+	cursor: pointer;
+}
+
+input[type = "checkbox"]
+{
+	width: 20px;	
+}
+
+
+.select
+{
+	padding-left: 30%;
+}
+
+#emp
+{	width: 50%;
+	height: 40px;
+	background: transparent;
+	color: #FFFFFF;
+	cursor: pointer;	
+}
+option
+{
+	color: #000000;
+}
+
+#click
+{
+	cursor: pointer;
+}
+
+ 
+
+

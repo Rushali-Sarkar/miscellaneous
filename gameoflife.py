@@ -227,7 +227,7 @@ def draw_square(x: int, y: int, color: (int)):
         
 def gameoflife(rows:int, columns: int):
     
-    grid = PENTADECATHLON
+    grid = make_random_grid(rows,columns)
     
     while True:
         
@@ -248,21 +248,4 @@ def gameoflife(rows:int, columns: int):
 
     
 
-gameoflife(18, 11)
-    
-
-
-            
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
+gameoflife(20, 20)
